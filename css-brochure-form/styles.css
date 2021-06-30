@@ -24,7 +24,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: salmon;
   font-size: 1.2rem;
 }
@@ -43,6 +43,7 @@ input[type="submit"] {
   height: 35px;
   border-radius: 18px;
   font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 fieldset {
@@ -51,12 +52,14 @@ fieldset {
 
 input[type=text],
 input[type=email] {
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
   border: 2px solid #ccc;
   width: 400px;
   height: 35px;
   border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 select {
@@ -67,10 +70,11 @@ select {
   width: 400px;
   height: 35px;
   border-radius: 4px;
+  font-size: 14px;
 }
 
 label {
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   font-size: 11px;
 }
