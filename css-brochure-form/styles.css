@@ -1,0 +1,80 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.centeredTitle {
+  text-align: center;
+}
+
+.container {
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 5px;
+  color: salmon;
+  font-size: 1.2rem;
+}
+
+.span2 {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  background-color: salmon;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 35px;
+  border-radius: 18px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type=text],
+input[type=email] {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  width: 400px;
+  height: 35px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+select {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  background-color: rgba(211, 211, 211, 0.25);
+  width: 400px;
+  height: 35px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+label {
+  margin: 5px;
+  padding: 5px;
+  font-size: 11px;
+}
