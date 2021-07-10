@@ -94,7 +94,7 @@ a {
 .row-2 {
   display: flex;
   flex-direction: row;
-  width: 1130px;
+  width: 100%;
   margin: 60px 40px 60px 40px;
   padding: 60px 60px;
   flex-wrap: wrap;
@@ -195,7 +195,18 @@ a {
   position: absolute;
   top: 90px;
   left: 77px;
-  width: 40%;
+  width: 45%;
+}
+
+.absolute-h1-2 {
+  font-size: 2.25em;
+  font-weight: 200;
+  color: white;
+  font-family: 'Tiempos Headline', sans-serif;
+  position: absolute;
+  top: 161px;
+  left: 77px;
+  width: 45%;
 }
 
 .absolute-p {
@@ -205,6 +216,17 @@ a {
   position: absolute;
   width: 50%;
   top: 209px;
+  left: 77px;
+  line-height: 1.6em;
+}
+
+.absolute-p-2 {
+  font-size: 15px;
+  color: white;
+  font-family: 'Avenir', sans-serif;
+  position: absolute;
+  width: 50%;
+  top: 281px;
   left: 77px;
   line-height: 1.6em;
 }
@@ -229,7 +251,7 @@ a {
 }
 
 .serif-text {
-  font-family: 'Tiempos Headline', sans-serif;
+  font-family: 'Tiempos Headline', serif;
   font-weight: 300;
 }
 
@@ -246,4 +268,45 @@ a {
   height: 2px;
   color: rgb(119, 136, 153);
   margin-bottom: 100px;
+}
+
+/* This is the beggining of altered/ new classes for product.html */
+
+.row-2-half-row {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  width: 40%;
+  margin: auto;
+  text-align: justify;
+  line-height: 1.3;
+}
+
+.row-2-col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  width: 40%;
+  margin: auto;
+  text-align: justify;
+  line-height: 1.3;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row-2-whitebackground {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 60px 40px 60px 40px;
+  padding: 60px 60px;
+  flex-wrap: wrap;
+  text-align: justify;
+  line-height: 1.3;
+}
+
+.margintext {
+  margin-bottom: 10px;
 }
