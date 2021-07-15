@@ -1,0 +1,66 @@
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(247, 248, 250);
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.col-fourth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+}
+
+.full-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 31%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.txt-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.spacebelow {
+  margin-bottom: 10px;
+}
+
+h3,
+h2 {
+  font-weight: 600;
+}
