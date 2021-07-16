@@ -45,8 +45,8 @@ img {
 .icon-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 31%;
-  padding-top: 0;
+  padding: 40%;
+  padding-top: 5px;
   padding-bottom: 0;
 }
 
@@ -58,9 +58,15 @@ img {
 
 .spacebelow {
   margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+.title {
+  font-size: 0.8rem;
 }
 
 h3,
 h2 {
   font-weight: 600;
+  font-size: 0.4 em;
 }
