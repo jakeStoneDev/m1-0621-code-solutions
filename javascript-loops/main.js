@@ -83,3 +83,19 @@ getKeys(
     model: 'DMC',
     year: 1982
   });
+
+function getValues(object) {
+  var values = [];
+  for (var key in object) {
+    values.push(object[key]);
+  }
+  console.log('Value of values: ', values);
+  return values;
+}
+
+getValues(
+  {
+    make: 'DeLorean',
+    model: 'DMC',
+    year: 1982
+  });
