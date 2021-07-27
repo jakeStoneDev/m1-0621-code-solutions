@@ -3,7 +3,11 @@ var Jacob = {
   firstName: 'Jacob',
   lastName: 'Stone'
 };
-function getValue(object, key) {
-  return object[key];
+function getValues(object, key) {
+  var values = [];
+  for (key in object) {
+    values.push(object[key]);
+  }
+  return values;
 }
-getValue(Jacob, 'firstName');
+getValues(Jacob, 'firstName');
