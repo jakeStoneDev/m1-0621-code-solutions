@@ -10,4 +10,4 @@ console.log(document.querySelector('.hint'));
 console.dir(document.getElementsByClassName('hint'));
 
 console.log(document.querySelectorAll('p'));
-console.log(document.querySelectorAll('.example_link'));
+console.log(document.querySelectorAll('.example-link'));
