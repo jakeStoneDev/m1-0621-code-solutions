@@ -1,0 +1,33 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+}
+
+.text-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 3rem;
+}
+
+.text.underline {
+  border-bottom: 4px solid black;
+}
+
+.text.correct {
+  color: forestgreen;
+}
+
+.text.incorrect {
+  color: crimson;
+  border-bottom: 4px solid crimson;
+}
