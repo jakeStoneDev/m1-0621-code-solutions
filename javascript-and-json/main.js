@@ -21,14 +21,6 @@ var jsonLibrary = JSON.stringify(library);
 console.log('JSON Library: ', jsonLibrary);
 console.log('Type of jsonLibrary: ', typeof jsonLibrary);
 
-var student = {
-  number: '1',
-  name: 'Jacob'
-};
-console.log('student object: ', student);
+var obj = '{"student" : "Jake", "number" : 32}';
 
-var jsonStudent = JSON.stringify(student);
-console.log('Student object to JSON: ', jsonStudent);
-
-var jsonStudentToObject = JSON.parse(jsonStudent);
-console.log('JSON student to object: ', jsonStudentToObject);
+console.log(obj);
