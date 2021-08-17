@@ -1,14 +1,14 @@
 /* exported todos */
-
 var todos = [];
 
+var todosJSON;
+var previousTodosJSON = localStorage.getItem('javascript-local-storage');
+
+if (previousTodosJSON !== null) {
+  todos = JSON.parse(previousTodosJSON);
+}
+
 window.addEventListener('beforeunload', function (event) {
-  var previousTodosJSON = localStorage.getItem('javascript-local-storage');
-
-  var todosJSON = JSON.stringify(todos);
+  todosJSON = JSON.stringify(todos);
   localStorage.setItem('javascript-local-storage', todosJSON);
-
-  if (previousTodosJSON !== null) {
-    todos = JSON.parse(previousTodosJSON);
-  }
 });
