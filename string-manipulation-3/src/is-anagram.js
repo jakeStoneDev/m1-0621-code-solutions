@@ -1,23 +1,18 @@
 /* exported isAnagram */
 
 function repetions(array) {
-  var letters = [];
-  var repeatedLetters = 0;
+
+  var letterCountObject = {};
 
   for (var i = 0; i < array.length; i++) {
-    if (letters.includes(array[i])) {
-      repeatedLetters++;
-      letters.push(array[i]);
+    if (!letterCountObject[array[i]]) {
+      letterCountObject[array[i]] = 1;
     } else {
-      letters.push(array[i]);
+      letterCountObject[array[i]]++;
     }
   }
-  return repeatedLetters;
+  return letterCountObject;
 }
-var test1 = ['r', 'e', 'd', 'd', 'a', 'd'];
-var test2 = ['r', 'a', 'd', 'e', 'd', 'e'];
-console.log(repetions(test1));
-console.log(repetions(test2));
 
 function isAnagram(firstString, secondString) {
 
@@ -27,9 +22,15 @@ function isAnagram(firstString, secondString) {
   var noSpaceArray1 = newStringOne.split('');
   /* string 2 with no spaces and being split into an array */
   var noSpaceArray2 = newStringTwo.split('');
+
   /* if string 1 and string 2 are not same length its false */
-  if (repetions(noSpaceArray1) !== repetions(noSpaceArray2)) {
-    return false;
+  // if (repetions(noSpaceArray1) !== repetions(noSpaceArray2)) {
+  //   return false;
+  // }
+  for (var key in repetions(noSpaceArray1)) {
+    if (repetions(noSpaceArray1)[key] !== repetions(noSpaceArray2)[key]) {
+      return false;
+    }
   }
 
   if (noSpaceArray1.length !== noSpaceArray2.length) {
@@ -57,9 +58,3 @@ function isAnagram(firstString, secondString) {
   return true;
 
 }
-
-/* split the strings into two arrays of characters.
-loop through the first array and check if that character is in the other
-array. If not, return false.
-if character is a space continue.
-*/
