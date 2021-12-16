@@ -1,0 +1,386 @@
+body,
+html, {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Avenir', sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 1130px;
+  margin: auto;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.nav-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 5% 18px 5%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 60px;
+}
+
+.nav-col-third {
+  display: flex;
+  width: 30%;
+}
+
+.nav-col-two-third {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.nav-col-fifth {
+  display: flex;
+}
+
+.nav-button {
+  color: white;
+  background-color: rgb(41, 67, 99);
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: silver;
+  font-family: 'Avenir', sans-serif;
+}
+
+.nav-element {
+  font-size: 1rem;
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  position: relative;
+}
+
+.getStarted-button {
+  color: white;
+  background-color: rgb(41, 67, 99);
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  padding: 15px 35px 15px 35px;
+  margin-top: 10px;
+  position: absolute;
+  left: 77px;
+  top: 412px;
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 60px 40px 60px 40px;
+  padding: 60px 60px;
+  flex-wrap: wrap;
+  background-color: rgb(250, 250, 250);
+}
+
+.row-2-full-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.row-2-half-col {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 40px;
+  line-height: 3;
+}
+
+.row-3 {
+  display: flex;
+  flex-direction: row;
+  width: 1130px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.row-3-col-half {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-4 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgb(82, 83, 81);
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-top: 105px;
+  padding-bottom: 105px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.row4-col-half {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  line-height: 0.1;
+}
+
+.row4-col-fourth {
+  display: flex;
+  flex-basis: 20%;
+  flex-direction: column;
+  line-height: 0.1em;
+}
+
+.row-5 {
+  display: flex;
+  justify-content: left;
+  width: 1130px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(250, 250, 250);
+}
+
+.row-5-col {
+  display: flex;
+  flex-direction: row;
+  padding-right: 30px;
+  padding-left: 75px;
+}
+
+.absolute-div {
+  position: absolute;
+  width: 100%;
+  top: 1px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(49, 51, 53, 0.3);
+}
+
+.absolute-h1 {
+  font-size: 2.25em;
+  font-weight: 200;
+  color: white;
+  font-family: 'Tiempos Headline', sans-serif;
+  position: absolute;
+  top: 90px;
+  left: 77px;
+  width: 45%;
+}
+
+.absolute-h1-2 {
+  font-size: 2.25em;
+  font-weight: 200;
+  color: white;
+  font-family: 'Tiempos Headline', sans-serif;
+  position: absolute;
+  top: 161px;
+  left: 77px;
+  width: 45%;
+}
+
+.absolute-p {
+  font-size: 15px;
+  color: white;
+  font-family: 'Avenir', sans-serif;
+  position: absolute;
+  width: 50%;
+  top: 209px;
+  left: 77px;
+  line-height: 1.6em;
+}
+
+.absolute-p-2 {
+  font-size: 15px;
+  color: white;
+  font-family: 'Avenir', sans-serif;
+  position: absolute;
+  width: 50%;
+  top: 281px;
+  left: 77px;
+  line-height: 1.6em;
+}
+
+.getStarted-static {
+  color: white;
+  background-color: rgb(41, 67, 99);
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  padding: 15px 35px 15px 35px;
+  margin-top: 10px;
+}
+
+.logo-white {
+  margin-bottom: 40px;
+}
+
+.graytext {
+  color: rgb(110, 110, 110);
+  margin: 5px;
+}
+
+.serif-text {
+  font-family: 'Tiempos Headline', serif;
+  font-weight: 300;
+}
+
+.san-serif {
+  font-family: 'Avenir', sans-serif;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.linebreak {
+  width: 100%;
+  height: 2px;
+  color: rgb(119, 136, 153);
+  margin-bottom: 100px;
+}
+
+/* This is the beggining of altered/ new classes for product.html */
+
+.row-2-half-row {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  width: 40%;
+  margin: auto;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.row-2-col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  width: 40%;
+  margin: auto;
+  text-align: left;
+  line-height: 1.3;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row-2-whitebackground {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 60px 40px 60px 40px;
+  padding: 60px 60px;
+  flex-wrap: wrap;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.margintext {
+  margin-bottom: 10px;
+}
+
+/* This is the beggining for specific classes to implementation.html */
+.absolute-h1-3 {
+  font-size: 2.25em;
+  font-weight: 200;
+  color: white;
+  position: absolute;
+  top: 95px;
+  left: 77px;
+  width: 45%;
+}
+
+.absolute-p-3 {
+  font-size: 15px;
+  color: white;
+  font-family: 'Avenir', sans-serif;
+  position: absolute;
+  width: 50%;
+  top: 255px;
+  left: 77px;
+  line-height: 1.6em;
+}
+
+.imgcontain {
+  width: 90%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.img {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.centeredList {
+  width: 60%;
+}
+
+.row-2-imp {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 40px 60px 40px;
+  padding: 60px 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.listTitle {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: 'Avenir', sans-serif;
+}
+
+li::marker {
+  font-size: 2rem;
+  font-family: 'Tiempos Headline', serif;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.rowtitle {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 120px;
+}
